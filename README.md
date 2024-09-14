@@ -14,11 +14,11 @@ Detalhamento da arquitetura de IA:
  
 
 
-Etapa 1: Análise Exploratória de Dados com Power BI
+# Etapa 1: Análise Exploratória de Dados com Power BI
 Nosso cliente nos fornecerá conjuntos de dados, que serão a base para o desenvolvimento do projeto. A primeira etapa consiste em realizar uma análise detalhada desses dados utilizando o Power BI, uma ferramenta poderosa para visualização e exploração de informações. O objetivo inicial é identificar quais colunas são mais relevantes e fazem sentido em relação à coluna "target", que representa o resultado ou comportamento que queremos prever. Essa análise nos ajudará a entender melhor os dados e a definir os atributos mais significativos para o processo de modelagem.
  
 
-Etapa 2:Construção e Treinamento do Modelo com Azure AutoML
+# Etapa 2:Construção e Treinamento do Modelo com Azure AutoML
 Após a análise exploratória dos dados no Power BI, passamos para a construção do modelo preditivo usando o Azure AutoML. O AutoML (Automated Machine Learning) automatiza o processo de seleção de algoritmos e otimização de hiperparâmetros, tornando o desenvolvimento de modelos de machine learning mais eficiente e acessível.
 1. Configuração do Ambiente no Azure Machine Learning
 A primeira etapa envolve a configuração do ambiente no Azure ML Studio, que é onde todo o processo de AutoML será gerenciado.
@@ -52,8 +52,7 @@ O AutoML facilita a exportação do modelo como uma API REST, que pode ser integ
 Depois de implantado, o modelo pode ser monitorado através do Azure Application Insights, que coleta informações sobre a performance do modelo em produção, como tempo de resposta e eventuais falhas.
 Além disso, o Azure ML permite monitorar drift de dados, o que ajuda a identificar quando o comportamento dos dados muda ao longo do tempo, impactando a precisão do modelo. Caso necessário, o AutoML pode ser utilizado novamente para re-treinar o modelo com dados atualizados, garantindo que ele continue performando de maneira eficaz.
 Esse uso do Azure AutoML torna o processo de desenvolvimento de modelos preditivos muito mais ágil e preciso, automatizando tarefas que geralmente seriam manuais e demoradas. Com o AutoML, garantimos a criação de modelos de alta performance com menos esforço, permitindo um foco maior na análise de resultados e na comunicação com o cliente.
-Etapa 3: Visualização de Insights e Previsões em Dashboards Interativos
-Com o modelo treinado e pronto, voltaremos ao Power BI para criar um dashboard interativo, onde poderemos apresentar os resultados de forma visual e acessível. Esse dashboard será fundamental para que o cliente tenha um entendimento claro e completo das previsões e insights gerados pelo modelo. A ideia é tornar os dados e as previsões algo intuitivo e útil para a tomada de decisões.
 
-Além disso, para garantir uma comunicação eficiente e contínua das informações, o dashboard será integrado às nossas APIs, que atuarão como um portal de comunicação. Esse portal permitirá que o cliente acesse as informações preditivas e relatórios diretamente, de forma prática e centralizada, seja via APIs Java, C#, ou até mesmo por meio de aplicativos mobile.
+# Etapa 3: Visualização de Insights e Previsões em Dashboards Interativos
+Com o modelo treinado e pronto, voltaremos ao Power BI para criar um dashboard interativo, onde poderemos apresentar os resultados de forma visual e acessível. Esse dashboard será fundamental para que o cliente tenha um entendimento claro e completo das previsões e insights gerados pelo modelo. A ideia é tornar os dados e as previsões algo intuitivo e útil para a tomada de decisões.Além disso, para garantir uma comunicação eficiente e contínua das informações, o dashboard será integrado às nossas APIs, que atuarão como um portal de comunicação. Esse portal permitirá que o cliente acesse as informações preditivas e relatórios diretamente, de forma prática e centralizada, seja via APIs Java, C#, ou até mesmo por meio de aplicativos mobile.
 Este processo garante uma solução completa, desde a análise inicial dos dados até a criação de um modelo preditivo robusto, finalizando com uma visualização clara e acessível por meio de dashboards e APIs integradas.
