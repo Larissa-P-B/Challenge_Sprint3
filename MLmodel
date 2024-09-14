@@ -1,0 +1,28 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.5.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/azureml-automl:178
+  azureml.engine: automl
+mlflow_version: 2.9.2
+model_size_bytes: 736080
+model_uuid: 983fe1cb3edf4bf8abb98fc393733e57
+run_id: amiable_tongue_t4z4gz3r5n_263
+signature:
+  inputs: '[{"type": "string", "name": "Contract"}, {"type": "float", "name": "MonthlyCharges"},
+    {"type": "float", "name": "TotalCharges"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "bool", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-09-13 18:57:31.674918'
